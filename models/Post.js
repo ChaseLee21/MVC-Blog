@@ -1,10 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class User extends Model { }
+class Post extends Model { }
 
-User.init(
+Post.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -41,4 +40,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = Post;
